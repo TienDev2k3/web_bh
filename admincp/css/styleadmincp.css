@@ -1,0 +1,35 @@
+.wrapper{
+    border: 1px solid #412cc8;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+     /*trang web luon nam giua man hinh */
+    }
+.admincp-menu-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.admincp-menu-list li{
+    margin: 5px;
+    float: left;
+    }
+
+.admincp-menu-list li:hover{
+        color: rgb(234, 65, 31);
+        font-weight: bold;
+    }
+.admincp-menu-list a{
+    
+    text-decoration: none;
+}
+.clear{
+    clear: both;
+}
+.admincp_title{
+    color: chocolate;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}

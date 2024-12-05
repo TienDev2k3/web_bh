@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+}
+.row a{
+    text-decoration: none;
+}
+.wrapper{
+
+height: auto;
+width: 100%;
+margin: 0 auto;
+ /*trang web luon nam giua man hinh */
+}
+.wrapper_chtiet{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+.chitiet_sanpham p {
+    float: left;
+    width: 50%;
+    padding: 10px 0;
+    
+}
+.hinhanh_sanpham{
+    float: left;
+    width: 40%;
+}
+.header {
+    background-image: url("../images/1.gif");
+    background-size: cover; /* Giữ tỷ lệ hình ảnh và phủ toàn bộ header */
+    background-position: center; /* Căn giữa hình ảnh */
+    background-repeat: no-repeat;
+    border: 1px solid #ff80ff;
+    height: 180px;
+    width: 100%;
+}
+
+/* Reset CSS cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phong cách menu */
+.menu {
+    position: fixed;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); /* Căn giữa menu */
+    width: 100%; /* Chiếm 85% chiều ngang */
+    z-index: 999; /* Đảm bảo menu nằm trên cùng */
+   
+}
+
+.list-menu {
+    display: flex; /* Hiển thị theo hàng ngang */
+    justify-content: space-around; /* Phân bổ đều khoảng cách giữa các mục */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Phong cách từng mục menu */
+.list-menu li {
+    flex: 1; /* Chia đều không gian cho các mục */
+    text-align: center;
+    border: 1px solid #ccc; /* Thêm viền xung quanh mỗi ô */
+    border-radius: 5px; /* Bo góc các ô */
+    margin: 5px; /* Khoảng cách giữa các ô */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng khi hover */
+   
+}
+.list-menu li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Hiệu ứng hover */
+.list-menu li:hover {
+    background-color: #ddd; /* Đổi màu nền khi hover */
+    border-color: #999; /* Đổi màu viền khi hover */
+}
+
+.list-menu li a:hover {
+    color: #000; /* Đổi màu chữ khi hover */
+}
+
+#main{
+    border: 2px solid #3cb371;
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-right: 5px;
+}
+
+ul.list-slidebar{
+    
+    text-decoration: none;
+   width: 100%;
+   color: #00b300;
+   margin: 0;
+   padding: 0;
+   display: block;
+
+}
+ul.list-slidebar li{
+   
+    height: 20px;
+    margin: 10px 5px;
+    list-style-type: none; 
+    cursor: pointer;
+    width: 90%;
+}
+ul.list-slidebar li a{
+    text-decoration: none; 
+}
+ul.list-slidebar li:hover {
+    color: burlywood;
+    font-weight: bold;
+    background-color: #ff80ff;
+}
+/* phân trang */
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination a.active {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+/*end phân trang*/
+
+
+.main-content{
+    height:auto;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-right: 5px;
+}
+ul.product_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.product_list li{
+    width: 19%;  /* Mỗi sản phẩm chiếm 19% */
+    border: 1px solid #d91e1e;
+    padding: 2px;
+    margin: 3px; 
+    box-sizing: border-box; /* Tính cả padding và border vào kích thước */
+  
+   height: auto;
+}
+ul.product_list li img{
+    width: 100%;
+
+}
+.cate_product{
+    text-align: center;
+}
+ul.product_list li a{
+    text-decoration: none;
+}
+p.title_product{
+    font-weight: bold;
+    color: rgba(red, green, blue, alpha);
+    text-align: center;
+    font-size: 16px;
+}
+p.price_product{
+    font-weight: 900;
+    text-align: center;
+    color: red;
+    font-size: 16px;
+}
+.footer{
+    border: 2px solid #f3289e;
+    height: 150px;
+    width: 100%;
+    background: #aa0f11;
+}
+.footer_copyright{
+    text-align: center;
+    color: #000;
+}
+/* chi tiet sp*/
+/* Tabs */
+.tabs {
+    clear: both;
+    width: 100%;
+    background-color: #09F;
+    border-radius: 5px 5px 5px 5px;
+  }
+  ul#tabs-nav {
+    list-style: none;
+    margin: 0 ;
+
+    padding: 5px;
+    overflow: auto;
+  }
+  ul#tabs-nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 8px 10px;
+    border-radius: 5px 5px 5px 5px;
+    /*border: 1px solid #d5d5de;
+    border-bottom: none;*/
+    cursor: pointer;
+  }
+  ul#tabs-nav li:hover,
+  ul#tabs-nav li.active {
+    background-color: #08E;
+  }
+  #tabs-nav li a {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .tab-content {
+    padding-left: 5%;
+    border: 5px solid #09F;
+    background-color: #FFF;
+  }
+  /*cac buoc thanh toan*/
+  /* Global CSS, you probably don't need that */
+
+
+/* Breadcrups CSS */
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+}
+.arrow-steps .step {
+	font-size: 14px;
+	text-align: center;
+	color: #f1ebeb00;
+	cursor: default;
+	margin: 0 3px;
+	padding: 10px 10px 10px 30px;
+	min-width: 180px;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+  transition: background-color 0.2s ease;
+ 
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: -17px;
+	width: 0;
+	height: 0;
+	border-top: 19px solid transparent;
+	border-bottom: 17px solid transparent;
+	border-left: 17px solid #d9e3f7;	
+	z-index: 2;
+  transition: border-color 0.2s ease;
+}
+
+.arrow-steps .step:before {
+	right: auto;
+	left: 0;
+	border-left: 17px solid #fff;	
+	z-index: 0;
+}
+
+.arrow-steps .step:first-child:before {
+	border: none;
+}
+
+.arrow-steps .step:first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step span {
+	position: relative;
+}
+.arrow-steps .step a{
+   text-decoration: none;
+}
+.arrow-steps .step span:before {
+	opacity: 0;
+	content: "✔";
+	position: absolute;
+	top: -2px;
+	left: -20px;
+}
+
+.arrow-steps .step.done span:before {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease 0.5s;
+	-moz-transition: opacity 0.3s ease 0.5s;
+	-ms-transition: opacity 0.3s ease 0.5s;
+	transition: opacity 0.3s ease 0.5s;
+}
+
+.arrow-steps .step.current {
+	color: #fff;
+	background-color: #23468c;
+}
+
+.arrow-steps .step.current:after {
+	border-left: 17px solid #23468c;	
+}
